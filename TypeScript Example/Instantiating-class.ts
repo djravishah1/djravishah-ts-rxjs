@@ -1,0 +1,1 @@
+var obj = new Car("Engine 1")

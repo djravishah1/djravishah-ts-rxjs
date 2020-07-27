@@ -1,0 +1,10 @@
+let count = 0;
+const rate = 1000;
+let lastClick = Date.now() - rate;
+document.addEventListener('click', event => {
+  if (Date.now() - lastClick >= rate) {
+    count += event.clientX;
+    console.log(count);
+    lastClick = Date.now();
+  }
+});
